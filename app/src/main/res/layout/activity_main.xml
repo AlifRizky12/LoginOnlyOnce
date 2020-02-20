@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/dark_green"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="User: "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_angka1"
+        android:hint="Angka 1"
+        android:textColorHighlight="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txt_angka2"
+        android:hint="Angka 2"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:textSize="60dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1"
+            android:textSize="60dp">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_kali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="x"
+            android:layout_weight="1"
+            android:textSize="60dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_bagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_weight="1"
+            android:textSize="60dp">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil: "
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_logout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout">
+    </Button>
+
+</LinearLayout>
